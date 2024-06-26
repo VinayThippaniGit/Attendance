@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>MTEC</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<header>
+		<h1>MOTHER THERESSA COLLEGE</h1>
+	</header>
+
+	<div class="nav">
+		<a href="index.html">Home</a>
+		<a href="#">About Us</a>
+		<a href="#">Services</a>
+		<a href="#">Locations</a>
+		<a href="#">Contact Us</a>
+
+		<div class="dropdown">
+			<div class="loginbtn">*login</div>
+			<div class="dropdown-content">
+				<p onclick="document.getElementById('admin').style.display='block' ,
+							document.getElementById('home').style.display='none' ,
+							document.getElementById('teacher').style.display='none' ,
+							document.getElementById('student').style.display='none' ">Admin</p>
+				<p onclick="document.getElementById('admin').style.display='none' ,
+							document.getElementById('home').style.display='none' ,
+							document.getElementById('teacher').style.display='block' ,
+							document.getElementById('student').style.display='none' ">Teacher</p>
+				<p onclick="document.getElementById('admin').style.display='none' ,
+							document.getElementById('home').style.display='none' ,
+							document.getElementById('teacher').style.display='none' ,
+							document.getElementById('student').style.display='block' ">Student</p>
+			</div>
+		</div>
+	</div>
+
+	<!--For home page-->
+	<div class="home" id="home">
+		<marquee class="headline">Welcome to our homepage</marquee>
+		<h4>Welcome to our University . We are recognized as one of the great university . We provide facilities and
+			services to our students</h4>
+		<h4 class="headline">This site mainly designed for attendance purpose</h4>
+		<br>
+		<div class="lists">Departments
+			<ul>
+				<li><a href="#">B.Tech</a></li>
+				<li><a href="#">M.Tech</a></li>
+				<li><a href="#">DIPLOMA</a></li>
+			</ul>
+		</div>
+		<div class="lists">
+			Courses we offer
+			<ul>
+				<li><a href="#">CSE</a></li>
+				<li><a href="#">ECE</a></li>
+				<li><a href="#">EEE</a></li>
+			</ul>
+		</div>
+
+		<h4 class="promote">Choose your step and be a part of our wonderful journey<br>100% placement assurance</h4>
+	</div>
+
+
+	<!--Admin-->
+	<div class="admin" id="admin">
+		<h3 class="headlineB">Welcome to our Admin page , Please login</h3>
+		<h4 class="headline">Admin has the entire authority of teachers details</h4>
+
+		<div class="form">
+			<h3>Admin</h3>
+			<form action="C:\Users\thipp\eclipse\QUniversity\src\main\java\ServletQ\admin" method="post">
+				Admin Id : <input type="text" name="username" required><br><br>
+				password : <input type="password" name="password" required><br><br>
+				<input type="submit" value="login" class="button">
+			</form>
+		</div>
+	</div>
+
+	<!--Teacher-->
+	<div class="teacher" id="teacher">
+		<h3 class="headlineB">Welcome to our Teacher page , Please login</h3>
+		<h4 class="headline">The teacher role is to mark attendance of the students</h4>
+
+		<div class="form">
+			<h3>Teacher</h3>
+			<form action="teacher" method="post">
+				Teacher Id : <input type="text" name="username" required><br><br>
+				password : <input type="password" name="password" required><br><br>
+				<input type="submit" value="login" class="button">
+			</form>
+		</div>
+	</div>
+
+	<!--Student-->
+	<div class="student" id="student">
+		<h3 class="headlineB">Welcome to our Student page , Please login</h3>
+		<h4 class="headline">The student can only access his attendance details</h4>
+
+		<div class="form">
+			<h3>Student</h3>
+			<form action="Student" method="post">
+				Student name : <input type="text" name="username" required><br><br>
+				password : <input type="password" name="password" required><br><br>
+				<input type="submit" value="login" class="button">
+			</form>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br>
+	<footer class="footer">
+		<p>&copy; 2024 QUniversity. All rights reserved.</p>
+
+
+		<section class="section">
+			<h2>Contact Us</h2>
+			<p>Have questions? Need assistance? Our friendly team is here to help.</p>
+			<p>Phone: 1-800-QUNIVERSITY</p>
+			<p>Email: info@quniversity.com</p>
+			<p>Visit Us: [Address]</p>
+		</section>
+	</footer>
+</body>
+
+</html>
